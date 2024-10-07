@@ -7,7 +7,7 @@ const decodeTheRing = function (s, p) {
     
     const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
 
-    // Initial state
+    
     dp[0][0] = true; 
 
 
