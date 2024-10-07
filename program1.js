@@ -22,16 +22,16 @@ const dfs = (r, c) => {
     dfs(r - 1, c);  // up
     dfs(r, c + 1);  // right
     dfs(r, c - 1);  // left
-};
+  };
 
-let islandCount = 0;
-for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-        if (grid[r][c] === 'L' && !visited[r][c]) {
-            islandCount++;
-            dfs(r, c); // start a DFS for a new island
-        }
-    }
+  let islandCount = 0;
+  for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+          if (grid[r][c] === 'L' && !visited[r][c]) {
+              islandCount++;
+              dfs(r, c); // start a DFS for a new island
+          }
+      }
   }
 
   return islandCount;
