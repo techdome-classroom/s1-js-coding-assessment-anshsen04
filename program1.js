@@ -14,7 +14,6 @@ const getTotalIsles = function (grid) {
       if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W' || visited[r][c]) {
           return;
       }
-    // Mark the current land as visited
       visited[r][c] = true;
     // Explore all four directions
       dfs(r + 1, c);  // down
