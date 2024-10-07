@@ -32,9 +32,9 @@ for (let r = 0; r < rows; r++) {
             dfs(r, c); // start a DFS for a new island
         }
     }
-}
+  }
 
-return islandCount;
+  return islandCount;
 
 
 };
