@@ -13,7 +13,7 @@ const decodeTheRing = function (s, p) {
 
     for (let j = 1; j <= n; j++) {
         if (p[j - 1] === '*') {
-            dp[0][j] = dp[0][j - 1]; // '*' can match an empty sequence
+            dp[0][j] = dp[0][j - 1]; 
         }
     }
 
