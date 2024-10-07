@@ -10,7 +10,6 @@ const decodeTheRing = function (s, p) {
     
     dp[0][0] = true; 
 
-
     for (let j = 1; j <= n; j++) {
         if (p[j - 1] === '*') {
             dp[0][j] = dp[0][j - 1]; 
