@@ -10,7 +10,7 @@ const decodeTheRing = function (s, p) {
     // Initial state
     dp[0][0] = true; 
 
-    // Handle patterns that consist only of '*' at the start
+
     for (let j = 1; j <= n; j++) {
         if (p[j - 1] === '*') {
             dp[0][j] = dp[0][j - 1]; // '*' can match an empty sequence
