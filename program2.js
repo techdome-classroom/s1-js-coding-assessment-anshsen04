@@ -8,7 +8,7 @@ const decodeTheRing = function (s, p) {
     const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
 
     // Initial state
-    dp[0][0] = true; // Both message and pattern are empty
+    dp[0][0] = true; 
 
     // Handle patterns that consist only of '*' at the start
     for (let j = 1; j <= n; j++) {
