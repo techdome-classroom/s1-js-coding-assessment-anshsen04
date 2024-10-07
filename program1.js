@@ -15,7 +15,6 @@ const getTotalIsles = function (grid) {
           return;
       }
       visited[r][c] = true;
-    // Explore all four directions
       dfs(r + 1, c);  // down
       dfs(r - 1, c);  // up
       dfs(r, c + 1);  // right
