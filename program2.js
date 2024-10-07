@@ -4,7 +4,7 @@ const decodeTheRing = function (s, p) {
     const m = s.length;
     const n = p.length;
 
-    // Create a DP table
+    
     const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
 
     // Initial state
