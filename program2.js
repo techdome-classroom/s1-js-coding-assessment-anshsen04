@@ -30,7 +30,7 @@ const decodeTheRing = function (s, p) {
         }
     }
 
-    return dp[m][n]; // Final result indicating if the message matches the pattern
+    return dp[m][n];
 
 
 };
