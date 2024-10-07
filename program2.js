@@ -21,7 +21,7 @@ const decodeTheRing = function (s, p) {
     for (let i = 1; i <= m; i++) {
         for (let j = 1; j <= n; j++) {
             if (p[j - 1] === '*') {
-                // '*' can match 0 or more characters
+                
                 dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
             } else if (p[j - 1] === '?' || p[j - 1] === s[i - 1]) {
                 // Match single character or '?'
