@@ -11,7 +11,6 @@ const getTotalIsles = function (grid) {
   const visited = Array.from({ length: rows }, () => Array(cols).fill(false));
 
   const dfs = (r, c) => {
-    // Check for out of bounds or if it's water or already visited
       if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W' || visited[r][c]) {
           return;
       }
