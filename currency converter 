@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new   Scanner(System.in);
+
+        double usdToEur = 0.92;
+        double usdToGbp = 0.78;
+        double usdToInr = 83.12;
+        double usdToJpy = 155.33;
+
+        System.out.println("Currency Converter (From USD)");
+        System.out.println("Choose currency to convert to:");
+        System.out.println("1. EUR (Euro)");
+        System.out.println("2. GBP (British Pound)");
+        System.out.println("3. INR (Indian Rupee)");
+        System.out.println("4. JPY (Japanese Yen)");
+        System.out.print("Enter choice (1-4): ");
+        int choice = scanner.nextInt();
+
+        System.out.print("Enter amount in USD: ");
+        double amount = scanner.nextDouble();
+
+        double convertedAmount = 0;
+        String currency = "";
+
+        switch (choice) {
+            case 1:
+                convertedAmount = amount * usdToEur;
+                currency = "EUR";
+                break;
+            case 2:
+                convertedAmount = amount * usdToGbp;
+                currency = "GBP";
+                break;
+            case 3:
+                convertedAmount = amount * usdToInr;
+                currency = "INR";
+                break;
+            case 4:
+                convertedAmount = amount * usdToJpy;
+                currency = "JPY";
+                break;
+            default:
+                System.out.println("Invalid choice.");
+                System.exit(0);
+        }
+
+        System.out.printf("Converted Amount: %.2f %s\n", convertedAmount, currency);
+        scanner.close();
+    }
+}
